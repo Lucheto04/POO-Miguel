@@ -25,7 +25,10 @@ class Lapiz {
         /**
          * *set nos sirve para poder modificar los atributos de las instancias ya creadas.
          */
-        set tipoMina(nuevaMina) {
+        set setMina(nuevaMina) {
+            /**
+             * *Usamos el console en set y tambien en get para poder ver en consola cuando estamos ingresando a los metodos y asi entenderlo mejor
+             */
             console.log("SET");
             this.#mina = nuevaMina;
         }
@@ -67,7 +70,7 @@ console.log(Lapiz.afilar(lapiz1.tipoMina));
 /**
  * *Modificamos la mina de la instancia "lapiz1" con el metodo set, luego lo llamamos en consola para ver el resultado del cambio
  */
-lapiz1.tipoMina = "Tinta";
+lapiz1.setMina = "Tinta";
 console.log(lapiz1);
 
 
@@ -99,7 +102,7 @@ console.log(mecanico.tipoMina);
 /**
  * *Utilizamos el set para modificar el tipo de la mina y luego utilzamos el get para llamar el tipo de la mina modificado por el set
  */
-mecanico.tipoMina = "Aluminio"
+mecanico.setMina = "Aluminio"
 console.log(mecanico.tipoMina);
 
 
